@@ -1,17 +1,17 @@
 
 import { initializeApp } from "firebase/app";
-import {getAuth} from "firebase/auth";
+import { getAuth } from "firebase/auth";
 import { getStorage } from "firebase/storage";
 import { getFirestore } from "firebase/firestore";
 
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAuL5pM6nfhS5pHMrz8XiuyM-ROG8uBAM0",
-  authDomain: "chat-d2b0b.firebaseapp.com",
-  projectId: "chat-d2b0b",
-  storageBucket: "chat-d2b0b.appspot.com",
-  messagingSenderId: "997936507070",
-  appId: "1:997936507070:web:25883f14a05f1aa51316ef"
+  apiKey: "AIzaSyBVR2Jxa8hcaSQH6YwSuNXyYmebW0Ehohk",
+  authDomain: "chatify-2b00d.firebaseapp.com",
+  projectId: "chatify-2b00d",
+  storageBucket: "chatify-2b00d.appspot.com",
+  messagingSenderId: "184466387870",
+  appId: "1:184466387870:web:af56c05d17178910095c8f"
 };
 
 // Initialize Firebase
