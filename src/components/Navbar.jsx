@@ -9,7 +9,7 @@ export const Navbar = () => {
 
   return (
     <div className="navbar">
-      <span className="logo">Lama Chat</span>
+      <span className="logo">Chatify</span>
       <div className="user">
         <img src={currentUser.photoURL} alt=""/>
         <span>{currentUser.displayName}</span>
