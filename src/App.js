@@ -10,6 +10,7 @@ import{
   Route,
   Navigate,
 }from "react-router-dom";
+import Particles from "./components/Particles";
 
 function App() {
     const {currentUser}=useContext(AuthContext);  
@@ -20,19 +21,22 @@ function App() {
       return children;
     }
     return (
-
+    <div>
+      <Particles/>
     <BrowserRouter>
-      <Routes>
-        <Route path="/">
-          <Route index element={<ProtectedRoute>
-              <Home/>
-            </ProtectedRoute>
-          }/>
-          <Route path="login" element={<Login/>}/>
-          <Route path="register" element={<Register/>}/>
-        </Route>
-      </Routes>
-    </BrowserRouter>
+    <Routes>
+      
+      <Route path="/">
+        <Route index element={<ProtectedRoute>
+            <Home/>
+          </ProtectedRoute>
+        }/>
+        <Route path="login" element={<Login/>}/>
+        <Route path="register" element={<Register/>}/>
+      </Route>
+    </Routes>
+  </BrowserRouter></div>
+    
   );
 }
 

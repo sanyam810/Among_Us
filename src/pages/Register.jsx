@@ -5,7 +5,7 @@ import { auth, db, storage } from "../firebase"
 import {  ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
 import { doc, setDoc } from "firebase/firestore"; 
 import { useNavigate, Link } from "react-router-dom"; 
-
+import  Particles from '../components/Particles';
 
 
 export const Register = () => {
@@ -58,7 +58,9 @@ export const Register = () => {
   }
 
   return (
-    <div className='formContainer'>
+    <div>
+      
+      <div className='formContainer'>
         <div className='formWrapper'>
             <span className="logo">Chatify</span>
             <span className="title">Register</span>
@@ -76,7 +78,9 @@ export const Register = () => {
             </form>
             <p>You do have an account? <Link to="/Login">Login</Link></p>
         </div>
+      </div>
     </div>
+    
   )
 }
 
