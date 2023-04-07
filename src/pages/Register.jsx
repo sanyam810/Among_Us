@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Add from "../img/addAvatar.png";
+import Us from "../img/us.png";
 import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
 import { auth, db, storage } from "../firebase"
 import {  ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
@@ -62,7 +62,7 @@ export const Register = () => {
       
       <div className='formContainer'>
         <div className='formWrapper'>
-            <span className="logo">Chatify</span>
+            <span className="logo">Among Us</span>
             <span className="title">Register</span>
             <form onSubmit={handleSubmit}>
                 <input type="text" placeholder="display name"/>
@@ -70,8 +70,8 @@ export const Register = () => {
                 <input type="password" placeholder="password"/>
                 <input style={{display:"none"}}type="file" id="file"/>
                 <label htmlFor="file">
-                    <img src={Add} alt=""/>
-                    <span>Add an avater</span>
+                    <img src={Us} alt=""/>
+                    <span className='ava'>Add an avater</span>
                 </label>
                 <button>Sign Up</button>
                 {err && <span>Something went wrong</span>}
